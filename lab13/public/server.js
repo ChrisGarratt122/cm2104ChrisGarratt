@@ -36,4 +36,5 @@ app.get('/calc', function(req, res){
   }
     res.send(String(result));
 })
+app.use(express.static('public'))
 app.listen(8080);
