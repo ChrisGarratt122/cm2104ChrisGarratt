@@ -25,6 +25,6 @@ app.get('/calc', function(req, res){
   if (op == 'add'){
   var result = (x+y);
   }
-    res.send(String(result);
+    res.send(String(result));
 })
 app.listen(8080);
