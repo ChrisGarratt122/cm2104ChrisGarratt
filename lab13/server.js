@@ -25,6 +25,15 @@ app.get('/calc', function(req, res){
   if (op == 'add'){
   var result = (x+y);
   }
+  if (op == 'sub'){
+  var result = (x-y);
+  }
+  if (op == 'mult'){
+  var result = (x*y);
+  }
+  if (op == 'div'){
+  var result = (x/y);
+  }
     res.send(String(result));
 })
 app.listen(8080);
