@@ -12,6 +12,11 @@ app.get('/joke', function(req, res){
    var randomJoke = oneLinerJoke.getRandomJoke();
    res.end(randomJoke.body);
 });
+app.get('/getform', function(req, res){
+var name = req.query.name;
+var quest = req.query.quest;
+ res.send("Hi "+name+" I am sure you will "+quest) ;
+});
 app.get('/add', function(req, res){
 var x = parseInt(req.query.x);
 var y = parseInt(req.query.y);
