@@ -22,8 +22,8 @@ app.get('/calc', function(req, res){
   var y = parseInt(req.query.y);
   var op = req.query.op;
 
-  if (op == 'Mult'){
-  var result = (x*y);
+  if (op == 'add'){
+  var result = (x+y);
   }
     res.send(result);
 })
